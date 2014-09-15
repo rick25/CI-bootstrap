@@ -30,3 +30,13 @@ MIT with [CodeIgniter Amendments](http://codeigniter.com/user_guide/license.html
 ## Other
 
 If you're looking for a LESS and/or JS compilier, try out another flavor like [CodeIgniter Sunrise](https://github.com/sjlu/CodeIgniter-Sunrise).
+
+
+* Creacion :
+		git clone https://github.com/sjlu/CodeIgniter-Bootstrap.git
+* Subo a github el proyecto :
+		cd Codeigniter-Bootstrap
+		git remote add origen https://github.com/rick25/CI-bootstrap.git
+		git add .
+		git commit -m "Primer Commit"
+		git push origen master
