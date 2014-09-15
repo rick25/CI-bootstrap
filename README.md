@@ -40,3 +40,10 @@ If you're looking for a LESS and/or JS compilier, try out another flavor like [C
 		git add .
 		git commit -m "Primer Commit"
 		git push origen master
+* Para Heroku
+		git add .
+		git commit -m "Modificado para heroku"
+		heroku login
+		heroku create
+		git push heroku master
+		heroku open
