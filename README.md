@@ -47,3 +47,31 @@ If you're looking for a LESS and/or JS compilier, try out another flavor like [C
 		heroku create
 		git push heroku master
 		heroku open
+
+* Modifico el archivo core/Common.php en la linea 257 :
+		$config_modify = $_config[0] =& $config;
+		return $config_modify;
+
+* Creo la tabla articulos :
+		PARA POSTGRES :
+		CREATE TABLE articulos
+		(
+		  id SERIAL PRIMARY KEY,
+		  titulo TEXT NOT NULL,
+		  contenido TEXT NOT NULL
+		);
+
+		PARA MYSQL :
+
+		CREATE TABLE articulos
+		(
+			id INTEGER PRIMARY KEY AUTO_INCREMENT,
+			titulo VARCHAR(30) NOT NULL,
+			contenido VARCHAR(140) NOT NULL
+		)ENGINE=InnoDB AUTO_INCREMENT=1;
+
+* Luego de las modificaciones ejecuto :
+		git status
+		git add .
+		git commit -m "Agregado las funcionalidades de listar, crear, mostrar, modificar del controlador articulos"
+		git push origen master
